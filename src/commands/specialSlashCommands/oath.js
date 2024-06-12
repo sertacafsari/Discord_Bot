@@ -1,5 +1,11 @@
 const { SlashCommandBuilder } = require('discord.js');
 
+/**
+ * A slash command for printing the Turkish Student Oath.
+ * @returns The Turkish Student Oath.
+ * @author sbafsari
+ */
+
 const oath = "Türküm, doğruyum, çalışkanım. \n Yasam; küçüklerimi korumak, büyüklerimi saymak,yurdumu, milletimi özümden çok sevmektir.  \n Ülküm; yükselmek, ileri gitmektir.  \n Varlığım Türk varlığına armağan olsun."
 
 module.exports = {
