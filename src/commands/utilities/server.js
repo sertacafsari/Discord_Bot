@@ -4,6 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
  * A slash command for providing information about the server.
  * @returns A sentence that includes the server's name, creation date, and the number of members.
  * @author sbafsari
+ * @version 1.0
  */
 
 module.exports = {

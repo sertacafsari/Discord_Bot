@@ -1,10 +1,11 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 /**
  * A slash command for deleting messages.
  * @returns A message that indicates the number of messages deleted.
  * @param {number} number - The number of messages to delete.
  * @author sbafsari
+ * @version 1.0
  */
 
 module.exports = {
@@ -16,7 +17,8 @@ module.exports = {
                 .setDescription('The number of messages to delete')
                 .setRequired(true)
                 .setMinValue(1)
-        ),
+        )
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages),
 	async execute(interaction) {
 		const number = interaction.options.getInteger('number');
         if (number < 1){

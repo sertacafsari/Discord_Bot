@@ -10,6 +10,7 @@
  * @requires fs
  * @requires path
  * @author sbafsari
+ * @version 1.0
  */
 
 // Importing required modules
@@ -81,6 +82,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
         console.error(error);
         if (interaction.deferred || interaction.replied) {
             await interaction.followUp({content: 'There was an error while executing the command!', ephemeral: true});
+            console.log(error);
         } else {
             await interaction.reply({content: 'There was an error while executing the command!', ephemeral: true});
         }
