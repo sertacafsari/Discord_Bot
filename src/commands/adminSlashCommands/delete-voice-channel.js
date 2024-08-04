@@ -3,8 +3,6 @@ const { SlashCommandBuilder, PermissionFlagsBits, ChannelType} = require('discor
 /**
  * A slash command that can be only used by administrators to delete a voice channel.
  * @returns Deletes the inputted voice channel and returns a message that indicates the deletion.
- * @author sbafsari
- * @version 1.0
  */
 module.exports = {
     data: new SlashCommandBuilder()

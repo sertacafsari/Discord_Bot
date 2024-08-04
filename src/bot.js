@@ -9,8 +9,6 @@
  * @requires discord.js
  * @requires fs
  * @requires path
- * @author sbafsari
- * @version 1.0
  */
 
 // Importing required modules

@@ -3,8 +3,6 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 /**
  * A slash command for providing information about the user.
  * @returns A sentence that includes the user's tag and the date they joined the server.
- * @author sbafsari
- * @version 1.0
  */
 
 module.exports = {

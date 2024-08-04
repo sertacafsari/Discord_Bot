@@ -3,8 +3,6 @@ const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 /**
  * A slash command for admins to kick a user.
  * @returns A message that indicates the user has been kicked.
- * @author sbafsari
- * @version 1.0
  */
 module.exports = {
     data: new SlashCommandBuilder()

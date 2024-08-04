@@ -2,10 +2,9 @@ const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 /**
  * A slash command for deleting messages.
+ * This only deletes messages that are less than 14 days old.
  * @returns A message that indicates the number of messages deleted.
  * @param {number} number - The number of messages to delete.
- * @author sbafsari
- * @version 1.0
  */
 
 module.exports = {
